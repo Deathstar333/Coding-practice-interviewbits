@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class Solution {
     // DO NOT MODIFY THE LIST. IT IS READ ONLY
     public ArrayList<Integer> spiralOrder(final List<ArrayList<Integer>> A) {
@@ -44,4 +46,15 @@ public class Solution {
                 
         return arr;
     }
+	
+	public static void main(String args[]) {
+		
+		Solution S = new Solution();
+		ArrayList<ArrayList<Integer> > A1 = new ArrayList<ArrayList<Integer> >();
+		A1.add(new ArrayList<Integer>(Arrays.asList(1,2,3)) );
+		A1.add(new ArrayList<Integer>(Arrays.asList(4,5,6)) );
+		ArrayList<Integer> ans = new ArrayList<Integer>();
+		ans = S.spiralOrder(A1);
+		System.out.println(ans);
+	}
 }
